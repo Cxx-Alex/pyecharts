@@ -66,8 +66,8 @@ def Satisfaction(CenterName,TabName,Scores_List):
         ),
         markpoint_opts=opts.MarkPointOpts(
             data=[
-                opts.MarkPointItem(name='Min_Score',type_='min',itemstyle_opts=opts.ItemStyleOpts(color=Color_Min)),
-                opts.MarkPointItem(name='Max_Score',type_='max',itemstyle_opts=opts.ItemStyleOpts(color=Color_Max))
+                opts.MarkPointItem(name='Min_Score',type_='min', symbol_size=75,itemstyle_opts=opts.ItemStyleOpts(color=Color_Min)),
+                opts.MarkPointItem(name='Max_Score',type_='max', symbol_size=75,itemstyle_opts=opts.ItemStyleOpts(color=Color_Max))
             ]
         )
     )
@@ -86,7 +86,7 @@ def Satisfaction(CenterName,TabName,Scores_List):
 def NPS(CenterName):
     Items = CenterName
     SubTitle = "各项目NPS"
-    NPS_Scores = [0.2501,0.2633,27.21,22.22,21.11,20.03,23.00,24.44,26.36]
+    NPS_Scores = [25.01,26.33,27.21,22.22,21.11,20.03,23.00,24.44,26.36]
     BigTitle = '碧桂园集中式商业消费者满意度研究'
     Color_Com = 'rgba(61,109,207,0.6)'
     Color_Min = 'rgba(55,148,140,1)'
@@ -103,9 +103,7 @@ def NPS(CenterName):
         itemstyle_opts=opts.ItemStyleOpts(color=Color_Com),
         label_opts = opts.LabelOpts(
             position='inside',
-            formatter=JsCode(
-                "function(x){return Number(x.data.percent * 100).toFixed() + '%';}"
-            )
+            formatter="{c}%"
         )
     )
     bar.set_global_opts(
@@ -131,14 +129,14 @@ def NPS(CenterName):
                 opts.MarkLineItem(name='Average', type_='average')
             ],
             linestyle_opts=opts.LineStyleOpts(color=Color_Max, width=3, type_='dashed'),
-            label_opts=opts.LabelOpts(formatter="{value}%")
+            label_opts=opts.LabelOpts(formatter="{c}%")
         ),
         markpoint_opts=opts.MarkPointOpts(
             data=[
-                opts.MarkPointItem(name='Min_Score', type_='min', itemstyle_opts=opts.ItemStyleOpts(color=Color_Min)),
-                opts.MarkPointItem(name='Max_Score', type_='max', itemstyle_opts=opts.ItemStyleOpts(color=Color_Max))
+                opts.MarkPointItem(name='Min_Score', type_='min', symbol_size=75, itemstyle_opts=opts.ItemStyleOpts(color=Color_Min)),
+                opts.MarkPointItem(name='Max_Score', type_='max', symbol_size=75, itemstyle_opts=opts.ItemStyleOpts(color=Color_Max))
             ],
-            label_opts=opts.LabelOpts(formatter="{value}%")
+            label_opts=opts.LabelOpts(formatter="{c}%",font_size=10,position='inside')
         )
     )
     bar.add_js_funcs("var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';")
