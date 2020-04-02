@@ -1,4 +1,4 @@
-from pyecharts.charts import Gauge,Grid,Liquid
+from pyecharts.charts import Gauge,Page,Liquid
 from pyecharts import options as opts
 from pyecharts.commons.utils import JsCode
 
@@ -20,16 +20,16 @@ def Liquid_NPS(nps_list):
             label_opts=opts.LabelOpts(
                 font_size=25,
                 formatter=JsCode(
-                    """function(prama) {
-                            return(Math.floor(prama.value*10000) / 100) + '%';
+                    """function(param){
+                        return(Math.floor(param.value * 10000) / 100) + '%';
                     }"""
                 ),
                 position='inside'
             )
         )
     )
-    return liquid
-    # liquid.render('liquid.html')
+    # return liquid
+    liquid.render('liquid.html')
 
 
 def BG():
@@ -37,7 +37,7 @@ def BG():
             init_opts=opts.InitOpts(
                 bg_color={"type": "pattern", "image": JsCode("img"), "repeat": "no-repeat"},
                 width='1200px',
-                height='900px'
+                height='1200px'
             )
         )
     gauge.set_global_opts(
@@ -53,24 +53,7 @@ def BG():
     gauge.add_js_funcs("var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';")
     return gauge
 
-def GatherAll():
-    liquid1 = Liquid_NPS(['项目1',[0.2533],["20%","33%"]])
-    liquid2 = Liquid_NPS(['项目2',[0.2633],["40%","33%"]])
-    liquid3 = Liquid_NPS(['项目2', [0.2733], ["60%", "33%"]])
-    bg = BG()
-    grid = Grid(
-        init_opts=opts.InitOpts(
-            bg_color={"type": "pattern", "image": JsCode("img"), "repeat": "no-repeat"},
-            width='1200px',
-            height='900px'
-        )
-    )
-    grid.add(bg,grid_opts=opts.GridOpts())
-    grid.add(liquid1, grid_opts=opts.GridOpts())
-    grid.add(liquid2, grid_opts=opts.GridOpts())
-    grid.add(liquid3, grid_opts=opts.GridOpts())
-    grid.add_js_funcs("var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';")
-    grid.render('test_nps.html')
 
-# Liquid_NPS()
-GatherAll()
+
+Liquid_NPS(['项目1',[0.2533],['180px',"200px"]])
+# GatherAll()

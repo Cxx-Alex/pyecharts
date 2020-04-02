@@ -8,12 +8,12 @@
 
 </head>
 <body>
-    <div id="c14aad3397254d439ad8b1a65f00548f" class="chart-container" style="width:1200px; height:900px;"></div>
+    <div id="b1c9577d85c1454fa464d5a52ca4d0b0" class="chart-container" style="width:900px; height:500px;"></div>
     <script>
-        var chart_c14aad3397254d439ad8b1a65f00548f = echarts.init(
-            document.getElementById('c14aad3397254d439ad8b1a65f00548f'), 'white', {renderer: 'canvas'});
+        var chart_b1c9577d85c1454fa464d5a52ca4d0b0 = echarts.init(
+            document.getElementById('b1c9577d85c1454fa464d5a52ca4d0b0'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_c14aad3397254d439ad8b1a65f00548f = {
+        var option_b1c9577d85c1454fa464d5a52ca4d0b0 = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -81,8 +81,8 @@
                 "formatter": function(prama) {                            return(Math.floor(prama.value*10000) / 100) + '%';                    }
             },
             "center": [
-                "20%",
-                "33%"
+                "180px",
+                "200px"
             ],
             "xAxisIndex": 1,
             "yAxisIndex": 1
@@ -114,8 +114,8 @@
                 "formatter": function(prama) {                            return(Math.floor(prama.value*10000) / 100) + '%';                    }
             },
             "center": [
-                "40%",
-                "33%"
+                "500px",
+                "200px"
             ],
             "xAxisIndex": 2,
             "yAxisIndex": 2
@@ -147,8 +147,8 @@
                 "formatter": function(prama) {                            return(Math.floor(prama.value*10000) / 100) + '%';                    }
             },
             "center": [
-                "60%",
-                "33%"
+                "820px",
+                "200px"
             ],
             "xAxisIndex": 3,
             "yAxisIndex": 3
@@ -215,20 +215,32 @@
     ],
     "grid": [
         {
+            "left": "left",
+            "width": "1200px",
+            "height": "1200px",
             "containLabel": false
         },
         {
+            "left": "left",
+            "width": "350px",
+            "height": "350px",
             "containLabel": false
         },
         {
+            "left": "center",
+            "width": "350px",
+            "height": "350px",
             "containLabel": false
         },
         {
+            "left": "right",
+            "width": "350px",
+            "height": "350px",
             "containLabel": false
         }
     ]
 };
-        chart_c14aad3397254d439ad8b1a65f00548f.setOption(option_c14aad3397254d439ad8b1a65f00548f);
+        chart_b1c9577d85c1454fa464d5a52ca4d0b0.setOption(option_b1c9577d85c1454fa464d5a52ca4d0b0);
     </script>
 </body>
 </html>
