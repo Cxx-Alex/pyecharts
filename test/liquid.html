@@ -8,11 +8,11 @@
 
 </head>
 <body>
-    <div id="23c38a2d3ec34a4bb7b7f28ec0ff3a40" class="chart-container" style="width:350px; height:350px;"></div>
+    <div id="7bdc9c2bc9c445878292f15d31ca63fd" class="chart-container" style="width:350px; height:350px;"></div>
     <script>
-        var chart_23c38a2d3ec34a4bb7b7f28ec0ff3a40 = echarts.init(
-            document.getElementById('23c38a2d3ec34a4bb7b7f28ec0ff3a40'), 'white', {renderer: 'canvas'});
-        var option_23c38a2d3ec34a4bb7b7f28ec0ff3a40 = {
+        var chart_7bdc9c2bc9c445878292f15d31ca63fd = echarts.init(
+            document.getElementById('7bdc9c2bc9c445878292f15d31ca63fd'), 'white', {renderer: 'canvas'});
+        var option_7bdc9c2bc9c445878292f15d31ca63fd = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -52,7 +52,8 @@
             "type": "liquidFill",
             "name": "\u9879\u76ee1",
             "data": [
-                0.2533
+                0.2533,
+                10.2533
             ],
             "waveAnimation": true,
             "animationDuration": 2000,
@@ -72,18 +73,23 @@
                 "position": "inside",
                 "margin": 8,
                 "fontSize": 25,
-                "formatter": return(Math.floor(a*10000) / 100) + '%';}
+                "formatter": function(param){                        return(Math.floor(param.value * 10000) / 100) + '%';                    }
             },
             "center": [
-                "180px",
-                "200px"
+                "175",
+                "130"
             ]
         }
     ],
     "legend": [
         {
             "data": [],
-            "selected": {}
+            "selected": {},
+            "show": true,
+            "padding": 5,
+            "itemGap": 10,
+            "itemWidth": 25,
+            "itemHeight": 14
         }
     ],
     "tooltip": {
@@ -97,9 +103,21 @@
             "fontSize": 14
         },
         "borderWidth": 0
-    }
+    },
+    "title": [
+        {
+            "subtext": "\u9879\u76ee1",
+            "left": "center",
+            "padding": 5,
+            "itemGap": 10,
+            "subtextStyle": {
+                "color": "rgba(0,0,0,0.8)",
+                "fontSize": 16
+            }
+        }
+    ]
 };
-        chart_23c38a2d3ec34a4bb7b7f28ec0ff3a40.setOption(option_23c38a2d3ec34a4bb7b7f28ec0ff3a40);
+        chart_7bdc9c2bc9c445878292f15d31ca63fd.setOption(option_7bdc9c2bc9c445878292f15d31ca63fd);
     </script>
 </body>
 </html>

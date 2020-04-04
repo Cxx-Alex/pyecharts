@@ -2,6 +2,9 @@ from pyecharts.charts import Bar,Tab,Grid
 from pyecharts import options as opts
 from pyecharts.commons.utils import JsCode
 from CleanData import CleanData
+# import sys
+# sys.path.append("D:/Software/pycharm/Projects/pyecharts/test")
+# from test_liqud import PageALL
 
 def Satisfaction(CenterName,TabName,Scores_List):
     Items = CenterName

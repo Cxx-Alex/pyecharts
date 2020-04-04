@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>碧桂园集中式商业消费者满意度研究</title>
             <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/echarts-liquidfill.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://assets.pyecharts.org/assets/ResizeSensor.js"></script>
 
     
 </head>
@@ -40,23 +44,24 @@
         }
     </style>
     <div class="tab">
-            <button class="tablinks" onclick="showChart(event, '3aad11ff27b04ca8b46dc4a97c6f668c')">总体满意度</button>
-            <button class="tablinks" onclick="showChart(event, '8e8d8346257446bd8aaf36be1b6a6d17')">环境卫生</button>
-            <button class="tablinks" onclick="showChart(event, '941ff27653f54c9a94186b588c2ebf65')">配套设施</button>
-            <button class="tablinks" onclick="showChart(event, '46b7f92fb58a4541a02f6de00f5a84c9')">业态规划</button>
-            <button class="tablinks" onclick="showChart(event, 'bb1bf9f6ef034764a1e4258e4dc54004')">品牌招商</button>
-            <button class="tablinks" onclick="showChart(event, 'ac8d9d7b10314055a8fcce89da5b9632')">客户服务</button>
-            <button class="tablinks" onclick="showChart(event, '02170580ea2d493aa0766b99a005b6f9')">活动推广</button>
-            <button class="tablinks" onclick="showChart(event, 'd68164a39aa5479daeec2012ff385191')">NPS</button>
+            <button class="tablinks" onclick="showChart(event, '1a1f63068f8a4bd7b2872f9131bd7f2e')">总体满意度</button>
+            <button class="tablinks" onclick="showChart(event, 'ec2c2fc4f0cc4c2e9c191c2af32b35e5')">环境卫生</button>
+            <button class="tablinks" onclick="showChart(event, '30237f2ddee0464d832c03accfce0731')">配套设施</button>
+            <button class="tablinks" onclick="showChart(event, '4006ed81e8df4f6f88195e962316114e')">业态规划</button>
+            <button class="tablinks" onclick="showChart(event, '1166c765f1c44d4a82e54109a6e8d35a')">品牌招商</button>
+            <button class="tablinks" onclick="showChart(event, '64b68b5a54244fb8a3221dee69d65106')">客户服务</button>
+            <button class="tablinks" onclick="showChart(event, '509c0beac8f54e62ae863a6384331bb7')">活动推广</button>
+            <button class="tablinks" onclick="showChart(event, 'a3c0b59c6dbd485ca932f0307294f4bb')">NPS</button>
+            <button class="tablinks" onclick="showChart(event, '')">NPS2</button>
     </div>
 
     <div class="box">
-                <div id="3aad11ff27b04ca8b46dc4a97c6f668c" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="1a1f63068f8a4bd7b2872f9131bd7f2e" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_3aad11ff27b04ca8b46dc4a97c6f668c = echarts.init(
-            document.getElementById('3aad11ff27b04ca8b46dc4a97c6f668c'), 'white', {renderer: 'canvas'});
+        var chart_1a1f63068f8a4bd7b2872f9131bd7f2e = echarts.init(
+            document.getElementById('1a1f63068f8a4bd7b2872f9131bd7f2e'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_3aad11ff27b04ca8b46dc4a97c6f668c = {
+        var option_1a1f63068f8a4bd7b2872f9131bd7f2e = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -292,14 +297,14 @@
         }
     ]
 };
-        chart_3aad11ff27b04ca8b46dc4a97c6f668c.setOption(option_3aad11ff27b04ca8b46dc4a97c6f668c);
+        chart_1a1f63068f8a4bd7b2872f9131bd7f2e.setOption(option_1a1f63068f8a4bd7b2872f9131bd7f2e);
     </script>
-                <div id="8e8d8346257446bd8aaf36be1b6a6d17" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="ec2c2fc4f0cc4c2e9c191c2af32b35e5" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_8e8d8346257446bd8aaf36be1b6a6d17 = echarts.init(
-            document.getElementById('8e8d8346257446bd8aaf36be1b6a6d17'), 'white', {renderer: 'canvas'});
+        var chart_ec2c2fc4f0cc4c2e9c191c2af32b35e5 = echarts.init(
+            document.getElementById('ec2c2fc4f0cc4c2e9c191c2af32b35e5'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_8e8d8346257446bd8aaf36be1b6a6d17 = {
+        var option_ec2c2fc4f0cc4c2e9c191c2af32b35e5 = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -784,14 +789,14 @@
         }
     ]
 };
-        chart_8e8d8346257446bd8aaf36be1b6a6d17.setOption(option_8e8d8346257446bd8aaf36be1b6a6d17);
+        chart_ec2c2fc4f0cc4c2e9c191c2af32b35e5.setOption(option_ec2c2fc4f0cc4c2e9c191c2af32b35e5);
     </script>
-                <div id="941ff27653f54c9a94186b588c2ebf65" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="30237f2ddee0464d832c03accfce0731" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_941ff27653f54c9a94186b588c2ebf65 = echarts.init(
-            document.getElementById('941ff27653f54c9a94186b588c2ebf65'), 'white', {renderer: 'canvas'});
+        var chart_30237f2ddee0464d832c03accfce0731 = echarts.init(
+            document.getElementById('30237f2ddee0464d832c03accfce0731'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_941ff27653f54c9a94186b588c2ebf65 = {
+        var option_30237f2ddee0464d832c03accfce0731 = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -1359,14 +1364,14 @@
         }
     ]
 };
-        chart_941ff27653f54c9a94186b588c2ebf65.setOption(option_941ff27653f54c9a94186b588c2ebf65);
+        chart_30237f2ddee0464d832c03accfce0731.setOption(option_30237f2ddee0464d832c03accfce0731);
     </script>
-                <div id="46b7f92fb58a4541a02f6de00f5a84c9" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="4006ed81e8df4f6f88195e962316114e" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_46b7f92fb58a4541a02f6de00f5a84c9 = echarts.init(
-            document.getElementById('46b7f92fb58a4541a02f6de00f5a84c9'), 'white', {renderer: 'canvas'});
+        var chart_4006ed81e8df4f6f88195e962316114e = echarts.init(
+            document.getElementById('4006ed81e8df4f6f88195e962316114e'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_46b7f92fb58a4541a02f6de00f5a84c9 = {
+        var option_4006ed81e8df4f6f88195e962316114e = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -1851,14 +1856,14 @@
         }
     ]
 };
-        chart_46b7f92fb58a4541a02f6de00f5a84c9.setOption(option_46b7f92fb58a4541a02f6de00f5a84c9);
+        chart_4006ed81e8df4f6f88195e962316114e.setOption(option_4006ed81e8df4f6f88195e962316114e);
     </script>
-                <div id="bb1bf9f6ef034764a1e4258e4dc54004" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="1166c765f1c44d4a82e54109a6e8d35a" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_bb1bf9f6ef034764a1e4258e4dc54004 = echarts.init(
-            document.getElementById('bb1bf9f6ef034764a1e4258e4dc54004'), 'white', {renderer: 'canvas'});
+        var chart_1166c765f1c44d4a82e54109a6e8d35a = echarts.init(
+            document.getElementById('1166c765f1c44d4a82e54109a6e8d35a'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_bb1bf9f6ef034764a1e4258e4dc54004 = {
+        var option_1166c765f1c44d4a82e54109a6e8d35a = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -2343,14 +2348,14 @@
         }
     ]
 };
-        chart_bb1bf9f6ef034764a1e4258e4dc54004.setOption(option_bb1bf9f6ef034764a1e4258e4dc54004);
+        chart_1166c765f1c44d4a82e54109a6e8d35a.setOption(option_1166c765f1c44d4a82e54109a6e8d35a);
     </script>
-                <div id="ac8d9d7b10314055a8fcce89da5b9632" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="64b68b5a54244fb8a3221dee69d65106" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_ac8d9d7b10314055a8fcce89da5b9632 = echarts.init(
-            document.getElementById('ac8d9d7b10314055a8fcce89da5b9632'), 'white', {renderer: 'canvas'});
+        var chart_64b68b5a54244fb8a3221dee69d65106 = echarts.init(
+            document.getElementById('64b68b5a54244fb8a3221dee69d65106'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_ac8d9d7b10314055a8fcce89da5b9632 = {
+        var option_64b68b5a54244fb8a3221dee69d65106 = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -2918,14 +2923,14 @@
         }
     ]
 };
-        chart_ac8d9d7b10314055a8fcce89da5b9632.setOption(option_ac8d9d7b10314055a8fcce89da5b9632);
+        chart_64b68b5a54244fb8a3221dee69d65106.setOption(option_64b68b5a54244fb8a3221dee69d65106);
     </script>
-                <div id="02170580ea2d493aa0766b99a005b6f9" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="509c0beac8f54e62ae863a6384331bb7" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_02170580ea2d493aa0766b99a005b6f9 = echarts.init(
-            document.getElementById('02170580ea2d493aa0766b99a005b6f9'), 'white', {renderer: 'canvas'});
+        var chart_509c0beac8f54e62ae863a6384331bb7 = echarts.init(
+            document.getElementById('509c0beac8f54e62ae863a6384331bb7'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_02170580ea2d493aa0766b99a005b6f9 = {
+        var option_509c0beac8f54e62ae863a6384331bb7 = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -3576,14 +3581,14 @@
         }
     ]
 };
-        chart_02170580ea2d493aa0766b99a005b6f9.setOption(option_02170580ea2d493aa0766b99a005b6f9);
+        chart_509c0beac8f54e62ae863a6384331bb7.setOption(option_509c0beac8f54e62ae863a6384331bb7);
     </script>
-                <div id="d68164a39aa5479daeec2012ff385191" class="chart-container" style="width:1200px; height:650px;"></div>
+                <div id="a3c0b59c6dbd485ca932f0307294f4bb" class="chart-container" style="width:1200px; height:650px;"></div>
     <script>
-        var chart_d68164a39aa5479daeec2012ff385191 = echarts.init(
-            document.getElementById('d68164a39aa5479daeec2012ff385191'), 'white', {renderer: 'canvas'});
+        var chart_a3c0b59c6dbd485ca932f0307294f4bb = echarts.init(
+            document.getElementById('a3c0b59c6dbd485ca932f0307294f4bb'), 'white', {renderer: 'canvas'});
             var img = new Image(); img.src = 'https://s1.ax1x.com/2020/03/27/GPWPKI.jpg';
-        var option_d68164a39aa5479daeec2012ff385191 = {
+        var option_a3c0b59c6dbd485ca932f0307294f4bb = {
     "backgroundColor": {
         "type": "pattern",
         "image": img,
@@ -3824,7 +3829,58 @@
         }
     ]
 };
-        chart_d68164a39aa5479daeec2012ff385191.setOption(option_d68164a39aa5479daeec2012ff385191);
+        chart_a3c0b59c6dbd485ca932f0307294f4bb.setOption(option_a3c0b59c6dbd485ca932f0307294f4bb);
+    </script>
+                <div id="" class="chart-container" style="width:; height:;"></div>
+    <script>
+        var chart_ = echarts.init(
+            document.getElementById(''), '', {renderer: ''});
+            $('#5327be659f074630be010377a4818829').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#5327be659f074630be010377a4818829>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#5327be659f074630be010377a4818829'), function() { chart_5327be659f074630be010377a4818829.resize()});
+            $('#项目1').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目1>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目1'), function() { chart_项目1.resize()});
+            $('#项目2').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目2>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目2'), function() { chart_项目2.resize()});
+            $('#项目3').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目3>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目3'), function() { chart_项目3.resize()});
+            $('#项目4').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目4>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目4'), function() { chart_项目4.resize()});
+            $('#项目5').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目5>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目5'), function() { chart_项目5.resize()});
+            $('#项目6').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目6>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目6'), function() { chart_项目6.resize()});
+            $('#项目7').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目7>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目7'), function() { chart_项目7.resize()});
+            $('#项目8').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目8>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目8'), function() { chart_项目8.resize()});
+            $('#项目9').resizable().draggable().css('border-style', 'dashed').css('border-width', '1px');$("#项目9>div:nth-child(1)").width("100%").height("100%");
+            new ResizeSensor(jQuery('#项目9'), function() { chart_项目9.resize()});
+            var charts_id = ['5327be659f074630be010377a4818829','项目1','项目2','项目3','项目4','项目5','项目6','项目7','项目8','项目9'];
+function downloadCfg () {
+    const fileName = 'chart_config.json'
+    let downLink = document.createElement('a')
+    downLink.download = fileName
+
+    let result = []
+    for(let i=0; i<charts_id.length; i++) {
+        chart = $('#'+charts_id[i])
+        result.push({
+            cid: charts_id[i],
+            width: chart.css("width"),
+            height: chart.css("height"),
+            top: chart.offset().top + "px",
+            left: chart.offset().left + "px"
+        })
+    }
+
+    let blob = new Blob([JSON.stringify(result)])
+    downLink.href = URL.createObjectURL(blob)
+    document.body.appendChild(downLink)
+    downLink.click()
+    document.body.removeChild(downLink)
+}
+        var option_ = ;
+        chart_.setOption(option_);
     </script>
     </div>
 
